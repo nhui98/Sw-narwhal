@@ -1,60 +1,23 @@
-import { Link, NavLink } from "react-router-dom";
-import {
-  SwLogoWhite,
-  IconCampaign,
-  IconTeams,
-  IconLeads,
-  IconReports,
-  IconHelp,
-} from "../../assets/iconComponents";
-import "./Sidebar.scss";
+import { Link } from "react-router-dom";
+import { SwLogoWhite } from "../../assets/iconComponents";
+import SidebarIcon from "../SidebarIcon/SidebarIcon";
 
-const icons = [
-  {
-    id: "1",
-    name: "campaign",
-    Icon: IconCampaign,
-  },
-  {
-    id: "2",
-    name: "teams",
-    Icon: IconTeams,
-  },
-  {
-    id: "3",
-    name: "leads",
-    Icon: IconLeads,
-  },
-  {
-    id: "4",
-    name: "reports",
-    Icon: IconReports,
-  },
-  {
-    id: "5",
-    name: "help",
-    Icon: IconHelp,
-  },
-];
+interface SidebarProps {
+  icons: {
+    id: string;
+    name: string;
+    Icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+  }[];
+}
 
-export default function Sidebar() {
+export default function Sidebar({ icons }: SidebarProps) {
   return (
     <div className="sidebar">
       <Link to={"/"} className="sidebar-icon">
         <SwLogoWhite className="logo" />
       </Link>
       {icons.length > 0 &&
-        icons.map((icon) => (
-          <NavLink
-            to={"/" + icon.name}
-            className={({ isActive }) =>
-              `sidebar-icon ${isActive ? "active" : ""}`
-            }
-            key={icon.id}
-          >
-            <icon.Icon className="icon" />
-          </NavLink>
-        ))}
+        icons.map((icon) => <SidebarIcon key={icon.id} icon={icon} />)}
     </div>
   );
 }

@@ -1,0 +1,25 @@
+$sidebar-bg: #042235;
+$sidebar-width: 80px;
+$sidebar-logo-width: 32px;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $sidebar-bg;
+
+  .sidebar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $sidebar-width;
+    height: $sidebar-width;
+    cursor: pointer;
+
+    .logo {
+      width: $sidebar-logo-width;
+      height: $sidebar-logo-width;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+$sidebar-icon-hover-bg: #2995da;
+$sidebar-icon-width: 32px;
+
+.sidebar-icon {
+  &.active {
+    background-color: $sidebar-icon-hover-bg;
+
+    .icon {
+      opacity: 1;
+    }
+  }
+
+  &:last-of-type {
+    margin-top: auto;
+  }
+
+  .icon {
+    opacity: 0.3;
+    width: $sidebar-icon-width;
+    height: $sidebar-icon-width;
+  }
+}
