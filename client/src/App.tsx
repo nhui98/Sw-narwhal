@@ -1,12 +1,12 @@
 import Sidebar from "./components/Sidebar/Sidebar";
 import {
-  SwLogoWhite,
   IconCampaign,
   IconTeams,
   IconLeads,
   IconReports,
   IconHelp,
 } from "./assets/iconComponents";
+import Navbar from "./components/Navbar/Navbar";
 
 const icons = [
   {
@@ -38,8 +38,11 @@ const icons = [
 
 export default function App() {
   return (
-    <div className="sidebar">
-      <Sidebar icons={icons} />
-    </div>
+    <>
+      {/* <div className="sidebar">
+        <Sidebar icons={icons} />
+      </div> */}
+      <Navbar />
+    </>
   );
 }

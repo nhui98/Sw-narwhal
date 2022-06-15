@@ -1,3 +1,4 @@
 @use "./App";
-@use "./components/Sidebar/Sidebar.scss";
-@use "./components/SidebarIcon/SidebarIcon.scss";
+@use "./components/Sidebar/Sidebar";
+@use "./components/SidebarIcon/SidebarIcon";
+@use "./components/Navbar/Navbar";
