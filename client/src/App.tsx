@@ -1,3 +1,9 @@
+import Sidebar from "./components/Sidebar/Sidebar";
+
 export default function App() {
-  return <h1>hi mom</h1>
+  return (
+    <div className="sidebar">
+      <Sidebar />
+    </div>
+  );
 }
