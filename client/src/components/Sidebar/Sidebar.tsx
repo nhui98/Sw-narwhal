@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import {
   SwLogoWhite,
   IconCampaign,
@@ -38,23 +38,22 @@ const icons = [
 ];
 
 export default function Sidebar() {
-  const [selectedIcon, setSelectedIcon] = useState<String>("1");
   return (
     <div className="sidebar">
-      <div className="sidebar-icon">
+      <Link to={"/"} className="sidebar-icon">
         <SwLogoWhite className="logo" />
-      </div>
+      </Link>
       {icons.length > 0 &&
         icons.map((icon) => (
-          <div
-            className={`sidebar-icon${
-              icon.id === selectedIcon ? " active" : ""
-            }`}
+          <NavLink
+            to={"/" + icon.name}
+            className={({ isActive }) =>
+              `sidebar-icon ${isActive ? "active" : ""}`
+            }
             key={icon.id}
-            onClick={() => setSelectedIcon(icon.id)}
           >
             <icon.Icon className="icon" />
-          </div>
+          </NavLink>
         ))}
     </div>
   );
