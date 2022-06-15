@@ -1,12 +1,12 @@
 $sidebar-bg: #042235;
-$sidebar-width: 80px;
-$sidebar-logo-width: 32px;
+$sidebar-width: 5rem;
+$sidebar-logo-width: 2rem;
 
 .sidebar {
   display: flex;
   flex-direction: column;
   width: $sidebar-width;
-  height: 100vh;
+  height: 100%;
   background-color: $sidebar-bg;
 
   .sidebar-icon {
