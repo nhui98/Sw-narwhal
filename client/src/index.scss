@@ -1,4 +1,12 @@
-@use "./App";
+// global
+@use "./styles/Globals";
+
+// layout
+@use "./components/Layout/LayoutComponent";
+
+//pages
+
+//components
 @use "./components/Sidebar/Sidebar";
 @use "./components/SidebarIcon/SidebarIcon";
 @use "./components/Navbar/Navbar";
