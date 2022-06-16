@@ -1,13 +1,14 @@
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
-import { IconTeams } from "../../assets/iconComponents";
+import { IconTeams, IconPlus } from "../../assets/iconComponents";
+import HeaderButton from "../../components/HeaderButton/HeaderButton";
 
 export default function Teams() {
   return (
     <div className="teams">
       <div className="teams-header">
         <div>
-          <HeaderTitle icon={IconTeams} title={"Teams"} />
-          <div className="header-button">button</div>
+          <HeaderTitle icon={IconTeams} title={"teams"} />
+          <HeaderButton icon={IconPlus} title={"create new team"} />
         </div>
         <div>
           <div className="tabs">

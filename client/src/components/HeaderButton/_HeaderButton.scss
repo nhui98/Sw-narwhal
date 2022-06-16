@@ -1,0 +1,27 @@
+$color-white: #fff;
+$button-bg-color: #40d2bf;
+
+.header-button {
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $button-bg-color;
+  font-size: 0.875rem;
+  height: 2.25rem;
+  width: max-content;
+  cursor: pointer;
+
+  svg {
+    fill: $color-white;
+    width: 0.75rem;
+    height: 0.75rem;
+    vertical-align: middle;
+  }
+
+  span {
+    padding-left: 1rem;
+    vertical-align: middle;
+  }
+}
