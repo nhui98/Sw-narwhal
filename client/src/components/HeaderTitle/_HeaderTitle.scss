@@ -1,0 +1,15 @@
+$color-grey: #a4a6a8;
+
+.header-title {
+  display: flex;
+
+  svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    fill: $color-grey;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}

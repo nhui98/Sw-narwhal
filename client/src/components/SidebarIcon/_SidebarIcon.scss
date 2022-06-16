@@ -1,5 +1,6 @@
 $sidebar-icon-hover-bg: #2995da;
 $sidebar-icon-width: 2rem;
+$color-white: #fff;
 
 .sidebar-icon {
   &.active {
@@ -18,5 +19,6 @@ $sidebar-icon-width: 2rem;
     opacity: 0.3;
     width: $sidebar-icon-width;
     height: $sidebar-icon-width;
+    fill: $color-white;
   }
 }

@@ -5,6 +5,7 @@
 @use "./components/Layout/LayoutComponent";
 
 //pages
+@use "./pages/Teams/Teams";
 
 //components
 @use "./components/Sidebar/Sidebar";
@@ -13,3 +14,4 @@
 @use "./components/Breadcrumbs/Breadcrumbs";
 @use "./components/NotificationIcon/NotificationIcon";
 @use "./components/Avatar/Avatar";
+@use "./components/HeaderTitle/HeaderTitle";
