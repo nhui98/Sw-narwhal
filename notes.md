@@ -1,0 +1,1 @@
+npx @svgr/cli src/assets/icons --out-dir src/assets/iconComponents --icon --typescript

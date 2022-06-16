@@ -1,5 +1,6 @@
 import { IconMail, CaretDown } from "../../assets/iconComponents";
 import { data } from "../../data/data";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
       <div className="app-name">Narwhal</div>
 
       <div className="container">
-        <div className="breadcrumbs">Teams</div>
+        <Breadcrumbs />
 
         <div className="menu">
           <div className="menu-notification">

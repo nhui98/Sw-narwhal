@@ -1,0 +1,25 @@
+$color-black: #000000;
+
+.breadcrumbs {
+  color: $color-black;
+
+  .breadcrumb {
+    display: inline;
+    text-transform: capitalize;
+
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+
+  &:last-child {
+    font-weight: bold;
+  }
+
+  svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+  }
+}

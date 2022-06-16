@@ -1,3 +1,4 @@
+export { default as IconCaret } from "./IconCaret";
 export { default as CaretDown } from "./CaretDown";
 export { default as IconCampaign } from "./IconCampaign";
 export { default as IconHelp } from "./IconHelp";
