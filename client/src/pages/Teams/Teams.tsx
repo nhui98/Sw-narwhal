@@ -1,6 +1,19 @@
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import { IconTeams, IconPlus } from "../../assets/iconComponents";
 import HeaderButton from "../../components/HeaderButton/HeaderButton";
+import Tabs from "../../components/Tabs/Tabs";
+
+const tabs = [
+  {
+    title: "All",
+  },
+  {
+    title: "Favorites",
+  },
+  {
+    title: "Archived",
+  },
+];
 
 export default function Teams() {
   return (
@@ -11,11 +24,7 @@ export default function Teams() {
           <HeaderButton icon={IconPlus} title={"create new team"} />
         </div>
         <div>
-          <div className="tabs">
-            <div className="tab">tab1</div>
-            <div className="tab">tab2</div>
-            <div className="tab">tab3</div>
-          </div>
+          <Tabs tabs={tabs} />
           <div className="search">search</div>
         </div>
       </div>
