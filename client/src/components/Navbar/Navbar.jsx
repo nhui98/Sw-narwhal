@@ -1,6 +1,8 @@
 import { IconMail, CaretDown } from "../../assets/iconComponents";
 import { data } from "../../data/data";
+import Avatar from "../Avatar/Avatar";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
+import NotificationIcon from "../NotificationIcon/NotificationIcon";
 
 export default function Navbar() {
   return (
@@ -11,20 +13,14 @@ export default function Navbar() {
         <Breadcrumbs />
 
         <div className="menu">
-          <div className="menu-notification">
-            <div className="notification-icon">
-              <IconMail />
-            </div>
-            <div className="notification-count">
-              {data.current_user.notifications_count}
-            </div>
-          </div>
+          <NotificationIcon
+            icon={IconMail}
+            count={data.current_user.notifications_count}
+          />
 
           <div className="menu-settings">
             <div className="user-name">Hello, {data.current_user.name}</div>
-            <div className="user-avatar">
-              <img src={data.current_user.avatar} alt="User Avatar" />
-            </div>
+            <Avatar avatar={data.current_user.avatar} />
             <div className="carret-down">
               <CaretDown />
             </div>

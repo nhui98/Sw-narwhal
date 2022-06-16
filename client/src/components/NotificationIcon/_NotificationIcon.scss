@@ -1,0 +1,30 @@
+$color-white: #ffffff;
+$color-blue: #2995da;
+
+.menu-notification {
+  position: relative;
+  cursor: pointer;
+
+  .notification-icon {
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  .notification-count {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: $color-white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $color-blue;
+    top: -10px;
+    right: -8px;
+  }
+}
