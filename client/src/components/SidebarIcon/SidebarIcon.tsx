@@ -13,7 +13,7 @@ export default function SidebarIcon({
 }: SidebarIconProps) {
   return (
     <NavLink
-      to={"/" + name}
+      to={`/${name}`}
       className={({ isActive }) => `sidebar-icon ${isActive ? "active" : ""}`}
     >
       <Icon className="icon" />
