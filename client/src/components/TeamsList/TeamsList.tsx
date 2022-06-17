@@ -1,4 +1,6 @@
-type Team = {
+import TeamCard from "../TeamCard/TeamCard";
+
+export type Team = {
   id: number;
   name: string;
   image: string;
@@ -25,7 +27,7 @@ export default function TeamsList({ teams, title }: TeamsListProps) {
         </span>
       </div>
       {teams.map((team) => (
-        <div key={team.id}>tets</div>
+        <TeamCard key={team.id} team={team} />
       ))}
     </div>
   );
