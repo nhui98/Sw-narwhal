@@ -32,3 +32,11 @@ h6 {
 img {
   width: 100%;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
