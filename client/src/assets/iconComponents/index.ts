@@ -8,3 +8,4 @@ export { default as IconMail } from "./IconMail";
 export { default as IconReports } from "./IconReports";
 export { default as IconTeams } from "./IconTeams";
 export { default as SwLogoWhite } from "./SwLogoWhite";
+export { default as IconSearch } from "./IconSearch";

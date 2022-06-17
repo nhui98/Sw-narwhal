@@ -1,7 +1,9 @@
+import { useState } from "react";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
-import { IconTeams, IconPlus } from "../../assets/iconComponents";
+import { IconTeams, IconPlus, IconSearch } from "../../assets/iconComponents";
 import HeaderButton from "../../components/HeaderButton/HeaderButton";
 import Tabs from "../../components/Tabs/Tabs";
+import SearchInput from "../../components/SearchInput/SearchInput";
 
 const tabs = [
   {
@@ -16,6 +18,12 @@ const tabs = [
 ];
 
 export default function Teams() {
+  const [searchValue, setSearchValue] = useState<string>("");
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
+  };
+
   return (
     <div className="teams">
       <div className="teams-header">
@@ -25,8 +33,19 @@ export default function Teams() {
         </div>
         <div>
           <Tabs tabs={tabs} />
-          <div className="search">search</div>
+          <SearchInput
+            icon={IconSearch}
+            name="search"
+            placeholder="Search team name"
+            onChange={handleSearchChange}
+            value={searchValue}
+            type="text"
+          />
         </div>
+      </div>
+      <div className="teams-body">
+        <div className="teams-main">main</div>
+        <div className="teams-activity">activity</div>
       </div>
     </div>
   );

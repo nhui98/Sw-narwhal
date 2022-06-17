@@ -1,0 +1,12 @@
+.search-box {
+  display: flex;
+  column-gap: 0.5rem;
+
+  .input-search {
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
