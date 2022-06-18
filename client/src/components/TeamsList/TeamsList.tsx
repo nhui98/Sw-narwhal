@@ -26,9 +26,11 @@ export default function TeamsList({ teams, title }: TeamsListProps) {
           Showing {teams.length} out of {teams.length} teams
         </span>
       </div>
-      {teams.map((team) => (
-        <TeamCard key={team.id} team={team} />
-      ))}
+      <div className="teams-list-grid">
+        {teams.map((team) => (
+          <TeamCard key={team.id} team={team} />
+        ))}
+      </div>
     </div>
   );
 }

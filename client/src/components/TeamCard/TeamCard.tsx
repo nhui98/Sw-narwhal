@@ -3,6 +3,7 @@ import {
   IconStar,
   IconConversationsSmall,
   IconLeadsSmall,
+  IconStarFill,
 } from "../../assets/iconComponents";
 
 interface TeamsListProps {
@@ -10,7 +11,16 @@ interface TeamsListProps {
 }
 
 export default function TeamCard({
-  team: { image, name, created_at, description, campaigns_count, leads_count },
+  team: {
+    image,
+    name,
+    created_at,
+    description,
+    campaigns_count,
+    leads_count,
+    is_favorited,
+    is_archived,
+  },
 }: TeamsListProps) {
   return (
     <div className="team-card">
@@ -21,11 +31,11 @@ export default function TeamCard({
         <div className="team-card-info">
           <div className="team-card-name">{name}</div>
           {created_at && (
-            <span className="team-card-date">created on {created_at}</span>
+            <span className="team-card-date">Created on {created_at}</span>
           )}
         </div>
         <div className="team-card-star">
-          <IconStar />
+          {!is_favorited ? <IconStar /> : <IconStarFill />}
         </div>
       </div>
       <div className="team-card-description">

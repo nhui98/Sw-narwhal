@@ -1,0 +1,84 @@
+$card-name-color: #444444;
+$card-date-color: #565656;
+$star-fill-color: #f8ce43;
+$border-color: #e4e7ec;
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  row-gap: 1rem;
+
+  .team-card-header {
+    display: flex;
+    flex-direction: row;
+    height: 2.25rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+
+    .team-card-image {
+      width: 2.25rem;
+      height: 2.25rem;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .team-card-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.5rem;
+      line-height: 1.25;
+
+      .team-card-name {
+        color: $card-name-color;
+        font-weight: bold;
+      }
+
+      .team-card-date {
+        color: $card-date-color;
+        opacity: 0.5;
+        font-size: 0.875rem;
+      }
+    }
+
+    .team-card-star {
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+
+  .team-card-description {
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    padding: 0 1rem;
+  }
+
+  .team-card-footer {
+    display: flex;
+    border-top: 1px solid $border-color;
+    padding: 1.25rem 1rem;
+    column-gap: 0.75rem;
+
+    .team-card-campaign,
+    .team-card-leads {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 0.25rem;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

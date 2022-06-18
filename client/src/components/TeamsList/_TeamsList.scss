@@ -1,0 +1,10 @@
+$color-white: #fff;
+
+.teams-list {
+  background-color: $color-white;
+}
+
+.teams-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
