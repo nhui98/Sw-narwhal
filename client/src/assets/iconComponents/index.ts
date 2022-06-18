@@ -10,5 +10,6 @@ export { default as IconTeams } from "./IconTeams";
 export { default as SwLogoWhite } from "./SwLogoWhite";
 export { default as IconSearch } from "./IconSearch";
 export { default as IconStar } from "./IconStar";
+export { default as IconStarFill } from "./IconStarFill";
 export { default as IconLeadsSmall } from "./IconLeadsSmall";
 export { default as IconConversationsSmall } from "./IconConversationsSmall";
