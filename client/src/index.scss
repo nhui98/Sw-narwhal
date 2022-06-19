@@ -5,7 +5,13 @@
 @use "./components/Layout/LayoutComponent";
 
 //pages
+@use "./pages/Home/Home";
+@use "./pages/Campaign/Campaign";
 @use "./pages/Teams/Teams";
+@use "./pages/Leads/Lead";
+@use "./pages/Reports/Reports";
+@use "./pages/Help/Help";
+@use "./pages/NotFound/NotFound";
 
 //components
 @use "./components/Sidebar/Sidebar";

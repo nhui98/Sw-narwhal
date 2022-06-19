@@ -1,31 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LayoutComponent from "./components/Layout/LayoutComponent";
-import TeamsList from "./components/TeamsList/TeamsList";
 import "./index.scss";
+import LayoutComponent from "./components/Layout/LayoutComponent";
+import Home from "./pages/Home/Home";
+import Campaign from "./pages/Campaign/Campaign";
 import Teams from "./pages/Teams/Teams";
+import Leads from "./pages/Leads/Leads";
+import Reports from "./pages/Reports/Reports";
+import Help from "./pages/Help/Help";
+import NotFound from "./pages/NotFound/NotFound";
+import TeamsList from "./components/TeamsList/TeamsList";
+import { data } from "./data/data";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-
-const HomePlaceholder = () => <div>HomePlaceholder</div>;
-const CampaignPlaceholder = () => <div>CampaignPlaceholder</div>;
-const LeadsPlaceholder = () => <div>LeadsPlaceholder</div>;
-const ReportsPlaceholder = () => <div>ReportsPlaceholder</div>;
-const HelpPlaceholder = () => <div>HelpPlaceholder</div>;
-const NotFound = () => <div>404</div>;
-
-import { data } from "./data/data";
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LayoutComponent />}>
-          <Route index element={<HomePlaceholder />} />
-          <Route path="campaign" element={<CampaignPlaceholder />} />
+          <Route index element={<Home />} />
+          <Route path="campaign" element={<Campaign />} />
           <Route path="teams" element={<Teams />}>
             <Route
               index
@@ -50,9 +48,9 @@ root.render(
               }
             />
           </Route>
-          <Route path="leads" element={<LeadsPlaceholder />} />
-          <Route path="reports" element={<ReportsPlaceholder />} />
-          <Route path="help" element={<HelpPlaceholder />} />
+          <Route path="leads" element={<Leads />} />
+          <Route path="reports" element={<Reports />} />
+          <Route path="help" element={<Help />} />
         </Route>
         <Route path="/*" element={<NotFound />} />
       </Routes>
