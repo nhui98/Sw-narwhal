@@ -33,11 +33,21 @@ root.render(
             />
             <Route
               path="favourites"
-              element={<TeamsList teams={data.teams} title="all teams" />}
+              element={
+                <TeamsList
+                  teams={data.teams.filter((team) => team.is_favorited)}
+                  title="all teams"
+                />
+              }
             />
             <Route
               path="archived"
-              element={<TeamsList teams={data.teams} title="all teams" />}
+              element={
+                <TeamsList
+                  teams={data.teams.filter((team) => team.is_archived)}
+                  title="all teams"
+                />
+              }
             />
           </Route>
           <Route path="leads" element={<LeadsPlaceholder />} />

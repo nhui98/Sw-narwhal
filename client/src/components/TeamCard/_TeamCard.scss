@@ -2,6 +2,7 @@ $card-name-color: #444444;
 $card-date-color: #565656;
 $star-fill-color: #f8ce43;
 $border-color: #e4e7ec;
+$archived-card-bg: #ebeef2;
 
 .team-card {
   display: flex;
@@ -10,6 +11,10 @@ $border-color: #e4e7ec;
   border: 1px solid $border-color;
   border-radius: 4px;
   row-gap: 1rem;
+
+  &.archived {
+    background-color: $archived-card-bg;
+  }
 
   .team-card-header {
     display: flex;

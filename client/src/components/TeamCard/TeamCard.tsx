@@ -23,7 +23,7 @@ export default function TeamCard({
   },
 }: TeamsListProps) {
   return (
-    <div className="team-card">
+    <div className={`team-card ${is_archived ? "archived" : ""}`}>
       <div className="team-card-header">
         <div className="team-card-image">
           <img src={image} alt={name} />
@@ -34,9 +34,11 @@ export default function TeamCard({
             <span className="team-card-date">Created on {created_at}</span>
           )}
         </div>
-        <div className="team-card-star">
-          {!is_favorited ? <IconStar /> : <IconStarFill />}
-        </div>
+        {!is_archived && (
+          <div className="team-card-star">
+            {!is_favorited ? <IconStar /> : <IconStarFill />}
+          </div>
+        )}
       </div>
       <div className="team-card-description">
         {description && <p>{description}</p>}
