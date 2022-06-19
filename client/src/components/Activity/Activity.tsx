@@ -3,7 +3,7 @@ import ActivityItem from "../ActivityItem/ActivityItem";
 
 export default function Activity() {
   return (
-    <>
+    <div className="teams-activity">
       <div className="activity-header">
         <h2 className="activity-title">Activity</h2>
       </div>
@@ -12,6 +12,6 @@ export default function Activity() {
           <ActivityItem activity={activity} key={activity.id} />
         ))}
       </div>
-    </>
+    </div>
   );
 }

@@ -50,9 +50,7 @@ export default function Teams() {
       </div>
       <div className="teams-body">
         <Outlet />
-        <div className="teams-activity">
-          <Activity />
-        </div>
+        <Activity />
       </div>
     </div>
   );

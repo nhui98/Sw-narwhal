@@ -1,17 +1,23 @@
 $border-color: #efefef;
+$color-white: #fff;
 
-.activity-header {
-  border-bottom: 1px solid $border-color;
-  padding: 1.5rem 2rem;
+.teams-activity {
+  background-color: $color-white;
+  min-width: 20rem;
 
-  .activity-title {
-    font-size: 1.125rem;
+  .activity-header {
+    border-bottom: 1px solid $border-color;
+    padding: 1.5rem 2rem;
+
+    .activity-title {
+      font-size: 1.125rem;
+    }
   }
-}
 
-.activity-feed {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  padding: 1.5rem 2rem;
+  .activity-feed {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1.5rem 2rem;
+  }
 }

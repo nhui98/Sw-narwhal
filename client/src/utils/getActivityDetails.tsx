@@ -7,19 +7,19 @@ export default function getActivityDetails(
     case "increased_quota":
       return (
         <span className="activity-item-description">
-          <b>{name}</b>&nbsp;increased&nbsp;<b>{target}</b>&apos;s quota
+          <b>{name}</b> increased <b>{target}</b>&apos;s quota
         </span>
       );
     case "added_leads":
       return (
         <span className="activity-item-description">
-          <b>{name}</b>&nbsp;added new leads to&nbsp;<b>{target}</b>
+          <b>{name}</b> added new leads to <b>{target}</b>
         </span>
       );
     case "archived_team":
       return (
         <span className="activity-item-description">
-          <b>{name}</b>&nbsp;archive the team&nbsp;<b>{target}</b>
+          <b>{name}</b> archive the team <b>{target}</b>
         </span>
       );
     default:

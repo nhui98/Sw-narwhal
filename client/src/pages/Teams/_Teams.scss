@@ -1,6 +1,5 @@
 $navbar-border-color: #e2e2e2;
 $team-body-bg-color: #f1f4f8;
-$color-white: #fff;
 
 .teams {
   display: flex;
@@ -35,10 +34,6 @@ $color-white: #fff;
     background-color: $team-body-bg-color;
     padding: 2rem;
     column-gap: 2rem;
-    // min-height: calc(100vh - 14rem);
-
-    .teams-activity {
-      background-color: $color-white;
-    }
+    min-height: calc(100vh - 14rem);
   }
 }

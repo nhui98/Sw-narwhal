@@ -5,6 +5,7 @@ $sidebar-width: 5rem;
   width: 100vw;
   min-width: 1520px;
   height: 100vh;
+  overflow-x: hidden;
 
   .sidebar-component {
     position: fixed;
