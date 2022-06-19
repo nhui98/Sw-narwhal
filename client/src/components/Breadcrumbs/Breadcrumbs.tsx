@@ -1,6 +1,5 @@
-import { Fragment } from "react";
-import { IconCaret } from "../../assets/iconComponents";
 import { useLocation } from "react-router-dom";
+import { IconCaret } from "../../assets/iconComponents";
 
 export default function Breadcrumbs() {
   const { pathname } = useLocation();

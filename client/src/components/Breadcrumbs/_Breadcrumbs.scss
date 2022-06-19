@@ -1,10 +1,10 @@
-$color-black: #000000;
+@use "../../styles/Variables" as v;
 
 .breadcrumbs {
-  color: $color-black;
+  color: v.$color-black;
 
   .breadcrumb {
-    display: inline;
+    display: inline-block;
     text-transform: capitalize;
 
     &:last-child {
