@@ -1,10 +1,35 @@
 $color-white: #fff;
+$color-grey: #7f7f7f;
+$border-color: #efefef;
 
 .teams-list {
+  display: flex;
+  flex-direction: column;
   background-color: $color-white;
+
+  .teams-list-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid $border-color;
+
+    h2 {
+      text-transform: capitalize;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    span {
+      font-size: 0.875rem;
+      color: $color-grey;
+    }
+  }
 }
 
 .teams-list-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
 }

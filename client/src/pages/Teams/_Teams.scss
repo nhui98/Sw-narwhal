@@ -1,5 +1,5 @@
 $navbar-border-color: #e2e2e2;
-$team-body-bg-color: #e5e5e5;
+$team-body-bg-color: #f1f4f8;
 
 .teams {
   display: flex;
@@ -32,6 +32,7 @@ $team-body-bg-color: #e5e5e5;
   .teams-body {
     display: flex;
     background-color: $team-body-bg-color;
+    padding: 2rem;
     // min-height: calc(100vh - 14rem);
   }
 }
