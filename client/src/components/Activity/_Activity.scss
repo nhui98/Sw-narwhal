@@ -1,0 +1,17 @@
+$border-color: #efefef;
+
+.activity-header {
+  border-bottom: 1px solid $border-color;
+  padding: 1.5rem 2rem;
+
+  .activity-title {
+    font-size: 1.125rem;
+  }
+}
+
+.activity-feed {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1.5rem 2rem;
+}

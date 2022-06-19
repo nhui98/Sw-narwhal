@@ -1,0 +1,17 @@
+$createat-color: #565656;
+
+.activity-item {
+  display: flex;
+  column-gap: 0.5rem;
+
+  .activity-item-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+
+    .activity-item-createdat {
+      color: $createat-color;
+      opacity: 0.5;
+    }
+  }
+}

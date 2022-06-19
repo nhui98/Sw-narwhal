@@ -5,6 +5,7 @@ import HeaderButton from "../../components/HeaderButton/HeaderButton";
 import Tabs from "../../components/Tabs/Tabs";
 import SearchInput from "../../components/SearchInput/SearchInput";
 import { Outlet } from "react-router-dom";
+import Activity from "../../components/Activity/Activity";
 
 const tabs = [
   {
@@ -49,7 +50,9 @@ export default function Teams() {
       </div>
       <div className="teams-body">
         <Outlet />
-        <div className="teams-activity">activity</div>
+        <div className="teams-activity">
+          <Activity />
+        </div>
       </div>
     </div>
   );
