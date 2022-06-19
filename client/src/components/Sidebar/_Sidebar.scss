@@ -1,4 +1,3 @@
-$sidebar-bg: #042235;
 $sidebar-width: 5rem;
 $sidebar-logo-width: 2rem;
 
@@ -7,7 +6,6 @@ $sidebar-logo-width: 2rem;
   flex-direction: column;
   width: $sidebar-width;
   height: 100%;
-  background-color: $sidebar-bg;
 
   .sidebar-icon {
     display: flex;

@@ -1,10 +1,10 @@
-$sidebar-icon-hover-bg: #2995da;
+@use "../../styles/Variables" as v;
+
 $sidebar-icon-width: 2rem;
-$color-white: #fff;
 
 .sidebar-icon {
   &.active {
-    background-color: $sidebar-icon-hover-bg;
+    background-color: v.$color-light-blue;
 
     .icon {
       opacity: 1;
@@ -16,9 +16,9 @@ $color-white: #fff;
   }
 
   .icon {
-    opacity: 0.3;
+    fill: v.$color-white;
     width: $sidebar-icon-width;
     height: $sidebar-icon-width;
-    fill: $color-white;
+    opacity: 0.3;
   }
 }
