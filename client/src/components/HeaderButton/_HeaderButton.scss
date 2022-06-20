@@ -1,20 +1,19 @@
-$color-white: #fff;
-$button-bg-color: #40d2bf;
+@use "../../styles/Variables" as v;
 
 .header-button {
+  color: v.$color-white;
+  background-color: v.$color-light-green;
+  font-size: 0.875rem;
+  text-transform: uppercase;
   border: none;
   border-radius: 3px;
   padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  color: $color-white;
-  background-color: $button-bg-color;
-  font-size: 0.875rem;
   height: 2.25rem;
   width: max-content;
   cursor: pointer;
 
   svg {
-    fill: $color-white;
+    fill: v.$color-white;
     width: 0.75rem;
     height: 0.75rem;
     vertical-align: middle;
