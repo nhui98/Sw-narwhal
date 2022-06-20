@@ -1,26 +1,12 @@
 import { useState } from "react";
-import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
+import { Outlet } from "react-router-dom";
 import { IconTeams, IconPlus, IconSearch } from "../../assets/iconComponents";
+import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import HeaderButton from "../../components/HeaderButton/HeaderButton";
 import Tabs from "../../components/Tabs/Tabs";
 import SearchInput from "../../components/SearchInput/SearchInput";
-import { Outlet } from "react-router-dom";
 import Activity from "../../components/Activity/Activity";
-
-const tabs = [
-  {
-    title: "All",
-    to: "/teams",
-  },
-  {
-    title: "Favorites",
-    to: "/teams/favourites",
-  },
-  {
-    title: "Archived",
-    to: "/teams/archived",
-  },
-];
+import { tabs } from "../../data/teamsHeaderTabsData";
 
 export default function Teams() {
   const [searchValue, setSearchValue] = useState<string>("");
