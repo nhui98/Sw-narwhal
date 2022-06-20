@@ -19,11 +19,5 @@ $sidebar-width: 5rem;
     width: calc(100% - $sidebar-width);
     height: 100%;
     margin-left: $sidebar-width;
-
-    .navbar-wrapper {
-      width: 100%;
-      height: 5rem;
-      background-color: v.$color-white;
-    }
   }
 }

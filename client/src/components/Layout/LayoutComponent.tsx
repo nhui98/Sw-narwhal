@@ -10,12 +10,8 @@ export default function LayoutComponent() {
         <Sidebar icons={sidebarIconsData} />
       </div>
       <div className="main-container">
-        <div className="navbar-wrapper">
-          <Navbar />
-        </div>
-        <div className="content-component">
-          <Outlet />
-        </div>
+        <Navbar />
+        <Outlet />
       </div>
     </div>
   );
