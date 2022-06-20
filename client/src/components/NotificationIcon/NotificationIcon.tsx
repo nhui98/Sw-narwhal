@@ -9,9 +9,7 @@ export default function NotificationIcon({
 }: NotificationIconProps) {
   return (
     <div className="menu-notification">
-      <div className="notification-icon">
-        <Icon />
-      </div>
+      <Icon className="notification-icon" />
       <div className="notification-count">{count}</div>
     </div>
   );
