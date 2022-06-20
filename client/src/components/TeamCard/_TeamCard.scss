@@ -1,6 +1,5 @@
-$card-name-color: #444444;
-$card-date-color: #565656;
-$star-fill-color: #f8ce43;
+@use "../../styles/Variables" as v;
+
 $border-color: #e4e7ec;
 $archived-card-bg: #ebeef2;
 
@@ -39,12 +38,12 @@ $archived-card-bg: #ebeef2;
       line-height: 1.25;
 
       .team-card-name {
-        color: $card-name-color;
+        color: v.$color-grey-dark;
         font-weight: bold;
       }
 
       .team-card-date {
-        color: $card-date-color;
+        color: v.$color-grey-brick;
         opacity: 0.5;
         font-size: 0.875rem;
       }
@@ -74,16 +73,5 @@ $archived-card-bg: #ebeef2;
     border-top: 1px solid $border-color;
     padding: 1.25rem 1rem;
     column-gap: 0.75rem;
-
-    .team-card-campaign,
-    .team-card-leads {
-      display: flex;
-      align-items: center;
-
-      span {
-        margin-left: 0.25rem;
-        font-size: 0.75rem;
-      }
-    }
   }
 }

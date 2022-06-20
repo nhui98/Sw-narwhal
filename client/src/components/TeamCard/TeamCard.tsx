@@ -5,6 +5,7 @@ import {
   IconLeadsSmall,
   IconStarFill,
 } from "../../assets/iconComponents";
+import TeamCardStat from "../TeamCardStat/TeamCardStat";
 
 interface TeamsListProps {
   team: Team;
@@ -45,16 +46,18 @@ export default function TeamCard({
       </div>
       <div className="team-card-footer">
         {campaigns_count && (
-          <div className="team-card-campaign">
-            <IconConversationsSmall />
-            <span>{campaigns_count} Campaigns</span>
-          </div>
+          <TeamCardStat
+            icon={IconConversationsSmall}
+            count={campaigns_count}
+            title={"Campaigns"}
+          />
         )}
         {leads_count && (
-          <div className="team-card-leads">
-            <IconLeadsSmall />
-            <span>{leads_count} Leads</span>
-          </div>
+          <TeamCardStat
+            icon={IconLeadsSmall}
+            count={leads_count}
+            title={"Leads"}
+          />
         )}
       </div>
     </div>
