@@ -1,20 +1,17 @@
 import getActivityDetails from "../../utils/getActivityDetails";
 import Avatar from "../Avatar/Avatar";
-
-type Activity = {
-  id: number;
-  person: {
-    id: number;
-    name: string;
-    avatar: string;
-  };
-  action: string;
-  target: string;
-  created_at?: string;
-};
-
 interface ActivityItemProps {
-  activity: Activity;
+  activity: {
+    id: number;
+    person: {
+      id: number;
+      name: string;
+      avatar: string;
+    };
+    action: string;
+    target: string;
+    created_at?: string;
+  };
 }
 
 export default function ActivityItem({
