@@ -1,17 +1,14 @@
-$border-color: #efefef;
-$color-white: #fff;
+@use "../../styles/Variables" as v;
 
 .teams-activity {
-  background-color: $color-white;
+  background-color: v.$color-white;
   min-width: 20rem;
+  height: max-content;
 
   .activity-header {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid v.$color-dark-grey;
     padding: 1.5rem 2rem;
-
-    .activity-title {
-      font-size: 1.125rem;
-    }
+    font-size: 1.125rem;
   }
 
   .activity-feed {

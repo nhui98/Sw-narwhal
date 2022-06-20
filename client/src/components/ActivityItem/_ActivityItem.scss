@@ -1,16 +1,20 @@
-$createat-color: #565656;
+@use "../../styles/Variables" as v;
 
 .activity-item {
   display: flex;
   column-gap: 0.5rem;
+  height: 4rem;
 
   .activity-item-details {
     display: flex;
     flex-direction: column;
     font-size: 0.875rem;
+    line-height: 1.3;
+    row-gap: 0.25rem;
+    color: v.$color-grey-dark;
 
     .activity-item-createdat {
-      color: $createat-color;
+      color: v.$color-grey-brick;
       opacity: 0.5;
     }
   }
