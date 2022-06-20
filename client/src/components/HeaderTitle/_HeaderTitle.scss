@@ -1,12 +1,14 @@
-$color-grey: #a4a6a8;
+@use "../../styles/Variables" as v;
 
 .header-title {
   display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 
   svg {
-    width: 2.25rem;
-    height: 2.25rem;
-    fill: $color-grey;
+    width: 2rem;
+    height: 2rem;
+    fill: v.$color-dark-grey-blue;
   }
 
   h1 {

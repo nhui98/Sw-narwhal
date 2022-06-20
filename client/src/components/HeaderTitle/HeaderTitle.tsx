@@ -6,7 +6,7 @@ interface HeaderTitleProps {
 export default function HeaderTitle({ icon: Icon, title }: HeaderTitleProps) {
   return (
     <div className="header-title">
-      <Icon color="#a4a6a8" />
+      <Icon />
       <h1>{title}</h1>
     </div>
   );
